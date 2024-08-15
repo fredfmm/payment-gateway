@@ -5,7 +5,7 @@ const port = 3001;
 
 app.use(express.json());
 
-app.post('/payment', (req, res) => {
+app.post('/payment', (req, res) => { 
     const { orderId } = req.query;
 
     const paymentSuccess = Math.random() > 0.2;
